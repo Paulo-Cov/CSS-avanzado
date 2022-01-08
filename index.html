@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h3{
+            color: blue;
+            text-align: center;
+        }
+        .alert{
+            color: #72353D;  
+            background: #EAD2D5;
+        }
+        body{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 1.5em;
+        }
+        .red{
+            display: inline-block;
+            width: 40%;
+            height: 200px;
+            padding: 50px;
+            border: solid black;
+            border-radius: 50px;
+            background-color: red;
+            animation-name: red;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .blu{
+            display: inline-block;
+            width: 40%;
+            height: 200px;
+            padding: 50px;
+            border: solid black;
+            border-radius: 50px;
+            background-color: blue;
+            animation-name: blu;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        @keyframes red {
+        from {background-color: red;}
+        to {background-color: blue;}
+        100% {transform: rotate(90deg);}
+        }
+        @keyframes blu {
+        from {background-color: blue;}
+        to {background-color: red;}
+        100% {transform: rotate(90deg);}
+        }
+
+    </style>
+    </head>
+    <body>
+    <div id="main" style="color: whitesmoke; text-align: center; margin: 30px; padding: 30px;">
+        <h3>Let's style this website!</h3>
+    </div>
+    <div class="alert">
+        <p>alert</p>
+    </div>
+    <div style="width: 1fr;">
+        <div class="red"></div>
+        <div class="blu"></div>
+    </div>
+    </body>
+</html>
